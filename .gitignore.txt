@@ -1,0 +1,8 @@
+node_modules/
+back-end/node modules/
+
+.env
+/back-end/ .env
+
+npm-debug.log
+.DS_Store

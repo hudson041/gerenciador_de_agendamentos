@@ -1,0 +1,163 @@
+body {
+    background-color: #0d1b2a; 
+    background: linear-gradient(135deg, #0d1b2a 0%, #003366 100%);
+    background-attachment: fixed;
+    color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #ffffff;
+    color: #333;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #003366; 
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: #007bff; 
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+#logout-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#logout-button:hover {
+    background: #0056b3; 
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.form-section,
+.list-section {
+    background: #ffffff;
+    color: #333; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    flex: 1; 
+    min-width: 300px;
+}
+
+.list-section {
+    flex: 2; 
+    min-width: 400px;
+}
+
+h2 {
+    color: #003366;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="datetime-local"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-section button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #007bff, #003366);
+    transition: opacity 0.3s ease;
+}
+
+.form-section button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+.agendamento-item {
+    background: #f8f9fa; 
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #007bff; 
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.agendamento-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.agendamento-item h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.agendamento-item p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #dc3545; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}

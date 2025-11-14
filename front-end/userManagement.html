@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    
+    <title>Gerenciar Usuários</title>
+    
+    <script src="js/auth.js"></script>
+    <script>
+        authGuard(); 
+        checkAdmin();
+    </script> 
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Usuários</h1>
+        <nav>
+            <a href="agendamentos.html">Meus Agendamentos</a>
+            <button id="logout-button">Sair</button>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="list-section" style="flex: 1;"> <h2>Todos os Usuários</h2>
+            
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Nível de Acesso</th>
+                        <th>Ação (Bloqueio)</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list-tbody">
+                    <tr><td colspan="5">Carregando...</td></tr>
+                </tbody>
+            </table>
+            
+        </section>
+    </main>
+ </body>
+  <script src="js/userAdmin.js"></script>
+</html>
