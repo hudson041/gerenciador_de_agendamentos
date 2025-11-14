@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     async function updateUserStatus(id, novoStatus) {
         try {
-            await fetch(`${API_BASE_URL}/users/${id}/status`, {
-                method: 'PUT',
+            await fetch(`${API_BASE_URL}/users/status/${id}`, {
+            method: 'PATCH',
                 headers: getAuthHeaders(),
                 body: JSON.stringify({ status: novoStatus })
             });
